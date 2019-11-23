@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Andres Atencio</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <title>Andrés Atencio</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
   <style type="text/css">
-    html, body {
-      font-family: 'Montserrat', sans-serif;
+    html,
+    body {
+      font-family: 'Raleway', sans-serif;
       width: 100%;
       padding: 0;
       margin: 0;
-      color: #000000;
-    }
-
-    #full-screen-background-image {
-      z-index: -999;
-      min-height: 100%;
-      min-width: 1024px;
-      width: 100%;
-      height: auto;
-      position: fixed;
-      top: 0;
-      left: 0;
+      background-color: #f1f1f1;
+      color: #232323;
     }
 
     #wrapper {
       position: relative;
       width: 800px;
       margin: 10%;
-      color: #333;
     }
 
-a {
-    color: green;
-}
-
+    a {
+      color: green;
+    }
   </style>
+   <script>
+    function copy() {
+      /* Get the text field */
+      
+      var copyText = document.getElementById("email");
+      console.log(copyText)
+      /* Select the text field */
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+      /* Copy the text inside the text field */
+      document.execCommand("copy");
+
+      /* Alert the copied text */
+      alert("Copied the text: " + copyText.value);
+    }
+  </script>
 </head>
+
 <body>
-  <img alt="full screen background image" src="img/background.jpg" id="full-screen-background-image" /> 
   <div id="wrapper">
-    <h1>Andres Atencio</h1>
+    <h1>Andrés Atencio</h1>
     <p>Software Developer</p>
-    <p><i>Node, Javascript, Java, Go ...</i></p>
-    <p><a href="mailto:and.atencio@gmail.com"> and.atencio@gmail.com</a></p>
-    <i>San Nicolas, Buenos Aires, Argentina</i>
+    <p><i>Node, Javascript, Java</i></p>
+    <i>San Nicolás, Buenos Aires, Argentina</i>
+    <p onclick="copy()"><a id="email" class="experiment-title" href="javascript:;">and.atencio@gmail.com</a></p>
   </div>
+ 
 </body>
+
 </html>
