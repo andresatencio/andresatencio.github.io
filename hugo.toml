@@ -1,8 +1,8 @@
 baseURL = 'http://andresatencio.github.io'
 languageCode = 'en-us'
-title = 'El blog de Andrés'
+title = 'Blog'
 theme = 'archie'
-copyright = "© Andy"
+copyright = "Andres Atencio"
 # Code Highlight
 pygmentsstyle = "monokai"
 pygmentscodefences = true
@@ -49,8 +49,3 @@ weight = 2
 name = "About"
 url = "/about"
 weight = 3
-
-[[menu.main]]
-name = "Tags"
-url = "/tags"
-weight = 4
