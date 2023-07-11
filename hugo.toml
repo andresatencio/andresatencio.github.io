@@ -1,0 +1,4 @@
+baseURL = 'http://andresatencio.gihub.io'
+languageCode = 'en-us'
+title = 'El blog de Andrés'
+theme = 'archie'
