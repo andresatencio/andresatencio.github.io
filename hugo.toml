@@ -1,4 +1,4 @@
-baseURL = 'http://andresatencio.gihub.io'
+baseURL = 'http://andresatencio.github.io'
 languageCode = 'en-us'
 title = 'El blog de Andrés'
 theme = 'archie'
